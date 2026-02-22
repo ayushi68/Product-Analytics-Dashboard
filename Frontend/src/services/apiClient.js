@@ -1,8 +1,8 @@
-import axios from "axios";
+﻿import axios from "axios";
 import { clearToken, getToken } from "./tokenService";
 
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5000"
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://product-analytics-dashboard-4b6q.onrender.com"
 });
 
 apiClient.interceptors.request.use((config) => {
